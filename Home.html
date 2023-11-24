@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/bcc4a40ca6.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoMovies</title>
+    <link rel="stylesheet" href="Home.css" />
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function showSlides(n) {
+        let i;
+        const slides = document.getElementsByClassName("slide");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+
+
+    </script>
+
+  </head>
+  <body>
+    <div id="screen">
+      <div id="navone">
+        <i class="fa-solid fa-bars fa-lg"></i>
+        <i class="fa-solid fa-wand-magic-sparkles fa-lg"></i>
+      </div>
+      <div id="navtwo">
+        <p>Home</p>
+        <p>Movies</p>
+        <p>Web Series</p>
+        <p>TV Shows</p>
+        <p>Calender</p>
+      </div>
+      <div id="disone" class="slides">
+        <div class="slide">
+          <div>
+            <i class="fa-solid fa-play fa-2xl"></i>
+          </div>
+          <div>
+            <p>Hereditary</p>
+          </div>
+          <div>
+            <span>12 Nov 2022</span>
+            <span><i class="fa-solid fa-circle fa-xs"></i></span>
+            <span>2h 11min</span>
+            <span><i class="fa-solid fa-circle fa-xs"></i></span>
+            <span><i class="fa-solid fa-star"></i></span>
+            <span>0.0/10 (2.5K)</span>
+          </div>
+          <div>
+            <button>Action</button>
+            <button>Action</button>
+            <button>Action</button>
+          </div>
+          <div>
+            <div>
+              <i class="fa-solid fa-bookmark fa-lg"></i>
+              <p>Add to Watchlist</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-ticket fa-lg"></i>
+              <p>Ticket</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div>
+            <i class="fa-solid fa-play fa-2xl"></i>
+          </div>
+          <div>
+            <p>Evil Dead</p>
+          </div>
+          <div>
+            <span>19 Nov 2022</span>
+            <span><i class="fa-solid fa-circle fa-xs"></i></span>
+            <span>2h 11min</span>
+            <span><i class="fa-solid fa-circle fa-xs"></i></span>
+            <span><i class="fa-solid fa-star"></i></span>
+            <span>0.0/10 (2.5K)</span>
+          </div>
+          <div>
+            <button>Action</button>
+            <button>Action</button>
+            <button>Action</button>
+          </div>
+          <div>
+            <div>
+              <i class="fa-solid fa-bookmark fa-lg"></i>
+              <p>Add to Watchlist</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-ticket fa-lg"></i>
+              <p>Ticket</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div>
+            <i class="fa-solid fa-play fa-2xl"></i>
+          </div>
+          <div>
+            <p>Thanksgiving</p>
+          </div>
+          <div>
+            <span>26 Nov 2022</span>
+            <span><i class="fa-solid fa-circle fa-xs"></i></span>
+            <span>2h 11min</span>
+            <span><i class="fa-solid fa-circle fa-xs"></i></span>
+            <span><i class="fa-solid fa-star"></i></span>
+            <span>0.0/10 (2.5K)</span>
+          </div>
+          <div>
+            <button>Action</button>
+            <button>Action</button>
+            <button>Action</button>
+          </div>
+          <div>
+            <div>
+              <i class="fa-solid fa-bookmark fa-lg"></i>
+              <p>Add to Watchlist</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-ticket fa-lg"></i>
+              <p>Ticket</p>
+            </div>
+          </div>
+        </div>
+        <button class="prev" onclick="plusSlides(-1)">❮</button>
+            <button class="next" onclick="plusSlides(1)">❯</button>
+      </div>
+      <div id="distwo">
+        <div>
+          <p><b>Coming Soon</b> Movies</p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div>
+          <p>Hindi</p>
+          <p>Marathi</p>
+          <p>Tamil</p>
+          <p>Telgu</p>
+          <p>Bhojpuri</p>
+        </div>
+        <div >
+          <div >
+            <div>
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BZjhjNmNlZGUtZTI5Zi00MTU5LTk2NTMtOTJjMzU3NWVjMGViXkEyXkFqcGdeQXVyMTU0MDA4MDkz._V1_.jpg"
+              />
+              <p>Rana</p>
+              <p>(2022)</p>
+              <div>
+                <div>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span>0.0 </span>
+                  <p
+                    style="
+                      color: rgb(71, 70, 70);
+                      font-size: 13px;
+                      margin-top: 3px;
+                    "
+                  >
+                    2000
+                  </p>
+                </div>
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <p
+                    style="
+                      color: rgb(71, 70, 70);
+                      font-size: 13px;
+                      margin-top: 3px;
+                    "
+                  >
+                    Your Rating
+                  </p>
+                </div>
+              </div>
+              <div>
+                <i
+                  style="color: #095be6"
+                  class="fa-solid fa-circle-play fa-xl"
+                ></i>
+                <p>Trailer</p>
+                <i class="fa-solid fa-bookmark fa-xl"></i>
+              </div>
+            </div>
+            <div id="lala">
+              <p>Watch/ticket</p>
+              <i class="fa-solid fa-ticket fa-xl"></i>
+            </div>
+          </div>
+          <div >
+            <div>
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BYmQwODM0NjAtODhkZS00OTk2LWE0MzYtOGVhZjMyOTI3Y2QyXkEyXkFqcGdeQXVyMjEzNzg4NjU@._V1_.jpg"
+              />
+              <p>Titu Ambani</p>
+              <p>(2022)</p>
+              <div>
+                <div>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span>0.0 </span>
+                  <p
+                    style="
+                      color: rgb(71, 70, 70);
+                      font-size: 13px;
+                      margin-top: 3px;
+                    "
+                  >
+                    2000
+                  </p>
+                </div>
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <p
+                    style="
+                      color: rgb(71, 70, 70);
+                      font-size: 13px;
+                      margin-top: 3px;
+                    "
+                  >
+                    Your Rating
+                  </p>
+                </div>
+              </div>
+              <div>
+                <i
+                  style="color: #095be6"
+                  class="fa-solid fa-circle-play fa-xl"
+                ></i>
+                <p>Trailer</p>
+                <i class="fa-solid fa-bookmark fa-xl"></i>
+              </div>
+            </div>
+            <div id="lala">
+              <p>Watch/ticket</p>
+              <i class="fa-solid fa-ticket fa-xl"></i>
+            </div>
+          </div>
+          <div >
+            <div>
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BZjhjNmNlZGUtZTI5Zi00MTU5LTk2NTMtOTJjMzU3NWVjMGViXkEyXkFqcGdeQXVyMTU0MDA4MDkz._V1_.jpg"
+              />
+              <p>Rana</p>
+              <p>(2022)</p>
+              <div>
+                <div>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span>0.0 </span>
+                  <p
+                    style="
+                      color: rgb(71, 70, 70);
+                      font-size: 13px;
+                      margin-top: 3px;
+                    "
+                  >
+                    2000
+                  </p>
+                </div>
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <p
+                    style="
+                      color: rgb(71, 70, 70);
+                      font-size: 13px;
+                      margin-top: 3px;
+                    "
+                  >
+                    Your Rating
+                  </p>
+                </div>
+              </div>
+              <div>
+                <i
+                  style="color: #095be6"
+                  class="fa-solid fa-circle-play fa-xl"
+                ></i>
+                <p>Trailer</p>
+                <i class="fa-solid fa-bookmark fa-xl"></i>
+              </div>
+            </div>
+            <div id="lala">
+              <p>Watch/ticket</p>
+              <i class="fa-solid fa-ticket fa-xl"></i>
+            </div>
+          </div>
+          <div >
+            <div>
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BYmQwODM0NjAtODhkZS00OTk2LWE0MzYtOGVhZjMyOTI3Y2QyXkEyXkFqcGdeQXVyMjEzNzg4NjU@._V1_.jpg"
+              />
+              <p>Titu Ambani</p>
+              <p>(2022)</p>
+              <div>
+                <div>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span>0.0 </span>
+                  <p
+                    style="
+                      color: rgb(71, 70, 70);
+                      font-size: 13px;
+                      margin-top: 3px;
+                    "
+                  >
+                    2000
+                  </p>
+                </div>
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <p
+                    style="
+                      color: rgb(71, 70, 70);
+                      font-size: 13px;
+                      margin-top: 3px;
+                    "
+                  >
+                    Your Rating
+                  </p>
+                </div>
+              </div>
+              <div>
+                <i
+                  style="color: #095be6"
+                  class="fa-solid fa-circle-play fa-xl"
+                ></i>
+                <p>Trailer</p>
+                <i class="fa-solid fa-bookmark fa-xl"></i>
+              </div>
+            </div>
+            <div id="lala">
+              <p>Watch/ticket</p>
+              <i class="fa-solid fa-ticket fa-xl"></i>
+            </div>
+          </div>
+          <div >
+            <div>
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BZjhjNmNlZGUtZTI5Zi00MTU5LTk2NTMtOTJjMzU3NWVjMGViXkEyXkFqcGdeQXVyMTU0MDA4MDkz._V1_.jpg"
+              />
+              <p>Rana</p>
+              <p>(2022)</p>
+              <div>
+                <div>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span>0.0 </span>
+                  <p
+                    style="
+                      color: rgb(71, 70, 70);
+                      font-size: 13px;
+                      margin-top: 3px;
+                    "
+                  >
+                    2000
+                  </p>
+                </div>
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <p
+                    style="
+                      color: rgb(71, 70, 70);
+                      font-size: 13px;
+                      margin-top: 3px;
+                    "
+                  >
+                    Your Rating
+                  </p>
+                </div>
+              </div>
+              <div>
+                <i
+                  style="color: #095be6"
+                  class="fa-solid fa-circle-play fa-xl"
+                ></i>
+                <p>Trailer</p>
+                <i class="fa-solid fa-bookmark fa-xl"></i>
+              </div>
+            </div>
+            <div id="lala">
+              <p>Watch/ticket</p>
+              <i class="fa-solid fa-ticket fa-xl"></i>
+            </div>
+          </div>
+            
+          
+        </div>
+      </div>
+      <div id="footer">Footer</div>
+    </div>
+  </body>
+</html>
